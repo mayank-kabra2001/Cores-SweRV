@@ -156,8 +156,8 @@ module rvdffe #( parameter WIDTH=1 )
 
 `ifndef PHYSICAL
    end
-   else 
-      $error("%m: rvdffe width must be >= 8");
+`else 
+   $error("%m: rvdffe width must be >= 8");
 `endif
    
    
