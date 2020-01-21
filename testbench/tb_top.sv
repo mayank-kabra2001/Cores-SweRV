@@ -209,8 +209,8 @@ module tb_top ( input logic core_clk, input logic reset_l, output finished);
      reset_l = 0;
 `endif
 
-     $readmemh("data.hex",     i_ahb_lsu.mem);
-     $readmemh("program.hex",  i_ahb_ic.mem);
+     $readmemh("sv_url_inc/data.hex",     i_ahb_lsu.mem);
+     $readmemh("sv_url_inc/program.hex",  i_ahb_ic.mem);
      tp = $fopen("trace_port.csv","w");
      el = $fopen("exec.log","w");
      $fwrite (el, "//Time : #inst 0  pc opcode reg regnum value\n");
