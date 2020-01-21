@@ -946,8 +946,8 @@ end : cam_array
    // the classes must be mutually exclusive with one another
    
    always_comb begin
-      i0_itype = NULL;
-      i1_itype = NULL;      
+      i0_itype = NULL_;
+      i1_itype = NULL_;      
    
       if (i0_legal_decode_d) begin
          if (i0_dp.mul)                  i0_itype = MUL;
